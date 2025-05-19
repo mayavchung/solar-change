@@ -2,4 +2,6 @@ This code usses the GFDL radiative kernel from [Soden et al. (2008)](https://jou
 
 These scripts are based on code by Chenggong Wang. Further details and original code are available [here](https://github.com/ChenggongWang/Radiative_Response_with_Radiative_Kernel).
 
-As the raw model data is too large, the estimated feedbacks using the radiative kernel (outputs of 1_R3k_GFDL_Solar_50yrCTRLref.ipynb) are available on Zenodo.
+./total_feedback/ contains the total feedbacks plotted in Figure 2.
+
+The estimated feedbacks in the -6% Solar experiments using the radiative kernel (outputs of 1_R3k_GFDL_Solar_50yrCTRLref.ipynb) are available on Zenodo.
