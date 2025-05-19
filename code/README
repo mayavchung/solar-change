@@ -1,1 +1,2 @@
-temp
+./feedbacks/ folder includes code to estimate radiative feedbacks and generate supplemental figure < # >. 
+These scripts are based on code by Chenggong Wang and further details and original code are available at: https://github.com/ChenggongWang/Radiative_Response_with_Radiative_Kernel.
