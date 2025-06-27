@@ -126,24 +126,20 @@ def get_experiment_names(model):
 
 def find_and_open_xarray_file(directory, keywords, verbose=True, use_first_if_multiple=False):
 
+    # Inputs: 
+    # directory: path to search
+    # keywords: list of strings in filename
+    # verbose: True = print messages
+    # use_first_if_multiple: True = open first result if multiple exist
+
+    # Outputs:
+    # xarray DataArray if opened
+    # list of matching files if not opened
+    # None if no match
+    
     from pathlib import Path
     import xarray as xr
 
-    """
-    Search for NetCDF files containing all keywords in filename.
-    Open as xarray.DataArray if one or (optionally) the first of multiple matches is found.
-
-    Parameters:
-    - directory: str or Path. Folder to search.
-    - keywords: list of str. Keywords that must be in filename.
-    - verbose: bool. If True, print messages.
-    - use_first_if_multiple: bool. If True, open first match even if multiple exist.
-
-    Returns:
-    - xarray.DataArray if opened
-    - List of matching files if not opened
-    - None if no match
-    """
     directory = Path(directory)
     matching_files = [
         file for file in directory.glob("*.nc")
